@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "product": "vehicle-dynamics-learning",
+  "title": "Vehicle Dynamics and Motorsport Engineering",
+  "purpose": "Connect forces, tires, suspension, powertrain, telemetry, and driver inputs to observable vehicle behavior and lap performance.",
+  "module_count": 24,
+  "progression_rule": "Complete modules in order until the first six are complete; later modules may be selected when their prerequisites are met.",
+  "interaction_contract": {
+    "environment": "MATLAB",
+    "notebook_format": "MATLAB scripts with %% Live Editor cells",
+    "lever_ui": "uifigure controls",
+    "required_sweeps": 2,
+    "required_broken_cases": 1,
+    "randomness": "seeded",
+    "base_matlab_preferred": true,
+    "learning_cycle": [
+      "read",
+      "visualize-baseline",
+      "move-one-lever",
+      "visualize-delta",
+      "read-and-explain"
+    ]
+  },
+  "modules": [
+    {
+      "number": 1,
+      "id": "P01",
+      "title": "Turn Steering and Speed into a Vehicle Path",
+      "guiding_question": "How do steering, speed, and tire grip determine the path a car can actually follow?",
+      "phase": 1,
+      "phase_title": "Motion and force",
+      "slug": "turn-steering-and-speed-into-a-vehicle-path",
+      "folder": "modules/01-turn-steering-and-speed-into-a-vehicle-path",
+      "status": "implemented",
+      "implementation_batch": "P01",
+      "prerequisites": [],
+      "evidence_level": "simulated"
+    },
+    {
+      "number": 2,
+      "id": "P02",
+      "title": "Relate Acceleration to Tire Force",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you relate Acceleration to Tire Force?",
+      "phase": 1,
+      "phase_title": "Motion and force",
+      "slug": "relate-acceleration-to-tire-force",
+      "folder": "modules/02-relate-acceleration-to-tire-force",
+      "status": "scaffolded",
+      "implementation_batch": "P02",
+      "prerequisites": [
+        "P01"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 3,
+      "id": "P03",
+      "title": "See Longitudinal Weight Transfer",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you see Longitudinal Weight Transfer?",
+      "phase": 1,
+      "phase_title": "Motion and force",
+      "slug": "see-longitudinal-weight-transfer",
+      "folder": "modules/03-see-longitudinal-weight-transfer",
+      "status": "scaffolded",
+      "implementation_batch": "P03",
+      "prerequisites": [
+        "P02"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 4,
+      "id": "P04",
+      "title": "Use the Friction Circle",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you use the Friction Circle?",
+      "phase": 1,
+      "phase_title": "Motion and force",
+      "slug": "use-the-friction-circle",
+      "folder": "modules/04-use-the-friction-circle",
+      "status": "scaffolded",
+      "implementation_batch": "P04",
+      "prerequisites": [
+        "P03"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 5,
+      "id": "P05",
+      "title": "Build Slip-Ratio Intuition",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you build Slip-Ratio Intuition?",
+      "phase": 2,
+      "phase_title": "Tires and handling",
+      "slug": "build-slip-ratio-intuition",
+      "folder": "modules/05-build-slip-ratio-intuition",
+      "status": "scaffolded",
+      "implementation_batch": "P05",
+      "prerequisites": [
+        "P04"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 6,
+      "id": "P06",
+      "title": "Build Slip-Angle Intuition",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you build Slip-Angle Intuition?",
+      "phase": 2,
+      "phase_title": "Tires and handling",
+      "slug": "build-slip-angle-intuition",
+      "folder": "modules/06-build-slip-angle-intuition",
+      "status": "scaffolded",
+      "implementation_batch": "P06",
+      "prerequisites": [
+        "P05"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 7,
+      "id": "P07",
+      "title": "Use the Bicycle Model",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you use the Bicycle Model?",
+      "phase": 2,
+      "phase_title": "Tires and handling",
+      "slug": "use-the-bicycle-model",
+      "folder": "modules/07-use-the-bicycle-model",
+      "status": "scaffolded",
+      "implementation_batch": "P07",
+      "prerequisites": [
+        "P06"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 8,
+      "id": "P08",
+      "title": "Separate Understeer from Oversteer",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you separate Understeer from Oversteer?",
+      "phase": 2,
+      "phase_title": "Tires and handling",
+      "slug": "separate-understeer-from-oversteer",
+      "folder": "modules/08-separate-understeer-from-oversteer",
+      "status": "scaffolded",
+      "implementation_batch": "P08",
+      "prerequisites": [
+        "P07"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 9,
+      "id": "P09",
+      "title": "Choose Spring Rate and Ride Frequency",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you choose Spring Rate and Ride Frequency?",
+      "phase": 3,
+      "phase_title": "Suspension and chassis",
+      "slug": "choose-spring-rate-and-ride-frequency",
+      "folder": "modules/09-choose-spring-rate-and-ride-frequency",
+      "status": "scaffolded",
+      "implementation_batch": "P09",
+      "prerequisites": [
+        "P08"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 10,
+      "id": "P10",
+      "title": "See Damping Change Transient Motion",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you see Damping Change Transient Motion?",
+      "phase": 3,
+      "phase_title": "Suspension and chassis",
+      "slug": "see-damping-change-transient-motion",
+      "folder": "modules/10-see-damping-change-transient-motion",
+      "status": "scaffolded",
+      "implementation_batch": "P10",
+      "prerequisites": [
+        "P09"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 11,
+      "id": "P11",
+      "title": "Distribute Roll Stiffness",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you distribute Roll Stiffness?",
+      "phase": 3,
+      "phase_title": "Suspension and chassis",
+      "slug": "distribute-roll-stiffness",
+      "folder": "modules/11-distribute-roll-stiffness",
+      "status": "scaffolded",
+      "implementation_batch": "P11",
+      "prerequisites": [
+        "P10"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 12,
+      "id": "P12",
+      "title": "Explore Camber and Toe Geometry",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you explore Camber and Toe Geometry?",
+      "phase": 3,
+      "phase_title": "Suspension and chassis",
+      "slug": "explore-camber-and-toe-geometry",
+      "folder": "modules/12-explore-camber-and-toe-geometry",
+      "status": "scaffolded",
+      "implementation_batch": "P12",
+      "prerequisites": [
+        "P11"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 13,
+      "id": "P13",
+      "title": "Map Engine Torque through Gearing",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you map Engine Torque through Gearing?",
+      "phase": 4,
+      "phase_title": "Powertrain, brakes, and aero",
+      "slug": "map-engine-torque-through-gearing",
+      "folder": "modules/13-map-engine-torque-through-gearing",
+      "status": "scaffolded",
+      "implementation_batch": "P13",
+      "prerequisites": [
+        "P12"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 14,
+      "id": "P14",
+      "title": "Choose Shift Points",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you choose Shift Points?",
+      "phase": 4,
+      "phase_title": "Powertrain, brakes, and aero",
+      "slug": "choose-shift-points",
+      "folder": "modules/14-choose-shift-points",
+      "status": "scaffolded",
+      "implementation_batch": "P14",
+      "prerequisites": [
+        "P13"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 15,
+      "id": "P15",
+      "title": "Model Braking Distance and Heat",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you model Braking Distance and Heat?",
+      "phase": 4,
+      "phase_title": "Powertrain, brakes, and aero",
+      "slug": "model-braking-distance-and-heat",
+      "folder": "modules/15-model-braking-distance-and-heat",
+      "status": "scaffolded",
+      "implementation_batch": "P15",
+      "prerequisites": [
+        "P14"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 16,
+      "id": "P16",
+      "title": "Balance Drag and Downforce",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you balance Drag and Downforce?",
+      "phase": 4,
+      "phase_title": "Powertrain, brakes, and aero",
+      "slug": "balance-drag-and-downforce",
+      "folder": "modules/16-balance-drag-and-downforce",
+      "status": "scaffolded",
+      "implementation_batch": "P16",
+      "prerequisites": [
+        "P15"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 17,
+      "id": "P17",
+      "title": "Decode and Plot CAN Signals",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you decode and Plot CAN Signals?",
+      "phase": 5,
+      "phase_title": "Telemetry and identification",
+      "slug": "decode-and-plot-can-signals",
+      "folder": "modules/17-decode-and-plot-can-signals",
+      "status": "scaffolded",
+      "implementation_batch": "P17",
+      "prerequisites": [
+        "P16"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 18,
+      "id": "P18",
+      "title": "Fuse GPS and IMU Motion",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you fuse GPS and IMU Motion?",
+      "phase": 5,
+      "phase_title": "Telemetry and identification",
+      "slug": "fuse-gps-and-imu-motion",
+      "folder": "modules/18-fuse-gps-and-imu-motion",
+      "status": "scaffolded",
+      "implementation_batch": "P18",
+      "prerequisites": [
+        "P17"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 19,
+      "id": "P19",
+      "title": "Estimate Vehicle State",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you estimate Vehicle State?",
+      "phase": 5,
+      "phase_title": "Telemetry and identification",
+      "slug": "estimate-vehicle-state",
+      "folder": "modules/19-estimate-vehicle-state",
+      "status": "scaffolded",
+      "implementation_batch": "P19",
+      "prerequisites": [
+        "P18"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 20,
+      "id": "P20",
+      "title": "Identify Parameters from a Real Drive",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you identify Parameters from a Real Drive?",
+      "phase": 5,
+      "phase_title": "Telemetry and identification",
+      "slug": "identify-parameters-from-a-real-drive",
+      "folder": "modules/20-identify-parameters-from-a-real-drive",
+      "status": "scaffolded",
+      "implementation_batch": "P20",
+      "prerequisites": [
+        "P19"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 21,
+      "id": "P21",
+      "title": "Optimize a Racing Line",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you optimize a Racing Line?",
+      "phase": 6,
+      "phase_title": "Performance engineering",
+      "slug": "optimize-a-racing-line",
+      "folder": "modules/21-optimize-a-racing-line",
+      "status": "scaffolded",
+      "implementation_batch": "P21",
+      "prerequisites": [
+        "P20"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 22,
+      "id": "P22",
+      "title": "Build a Lap-Time Simulator",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you build a Lap-Time Simulator?",
+      "phase": 6,
+      "phase_title": "Performance engineering",
+      "slug": "build-a-lap-time-simulator",
+      "folder": "modules/22-build-a-lap-time-simulator",
+      "status": "scaffolded",
+      "implementation_batch": "P22",
+      "prerequisites": [
+        "P21"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 23,
+      "id": "P23",
+      "title": "Compare Setup Changes Quantitatively",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you compare Setup Changes Quantitatively?",
+      "phase": 6,
+      "phase_title": "Performance engineering",
+      "slug": "compare-setup-changes-quantitatively",
+      "folder": "modules/23-compare-setup-changes-quantitatively",
+      "status": "scaffolded",
+      "implementation_batch": "P23",
+      "prerequisites": [
+        "P22"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 24,
+      "id": "P24",
+      "title": "Construct a GR86 Digital Twin",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you construct a GR86 Digital Twin?",
+      "phase": 6,
+      "phase_title": "Performance engineering",
+      "slug": "construct-a-gr86-digital-twin",
+      "folder": "modules/24-construct-a-gr86-digital-twin",
+      "status": "scaffolded",
+      "implementation_batch": "P24",
+      "prerequisites": [
+        "P23"
+      ],
+      "evidence_level": "none"
+    }
+  ]
+}

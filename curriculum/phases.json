@@ -1,0 +1,46 @@
+{
+  "phases": [
+    {
+      "phase": 1,
+      "title": "Motion and force",
+      "module_start": 1,
+      "module_end": 4,
+      "learning_goal": "Build visible, manipulable intuition for motion and force."
+    },
+    {
+      "phase": 2,
+      "title": "Tires and handling",
+      "module_start": 5,
+      "module_end": 8,
+      "learning_goal": "Build visible, manipulable intuition for tires and handling."
+    },
+    {
+      "phase": 3,
+      "title": "Suspension and chassis",
+      "module_start": 9,
+      "module_end": 12,
+      "learning_goal": "Build visible, manipulable intuition for suspension and chassis."
+    },
+    {
+      "phase": 4,
+      "title": "Powertrain, brakes, and aero",
+      "module_start": 13,
+      "module_end": 16,
+      "learning_goal": "Build visible, manipulable intuition for powertrain, brakes, and aero."
+    },
+    {
+      "phase": 5,
+      "title": "Telemetry and identification",
+      "module_start": 17,
+      "module_end": 20,
+      "learning_goal": "Build visible, manipulable intuition for telemetry and identification."
+    },
+    {
+      "phase": 6,
+      "title": "Performance engineering",
+      "module_start": 21,
+      "module_end": 24,
+      "learning_goal": "Build visible, manipulable intuition for performance engineering."
+    }
+  ]
+}
