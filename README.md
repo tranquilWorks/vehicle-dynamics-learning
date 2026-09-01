@@ -33,11 +33,21 @@ python .\bin\learn.py start
 In MATLAB:
 
 ```matlab
-launch_lesson("P01")
-run_module_checks("P01")
+launch_lesson("P02")
+run_module_checks("P02")
 ```
 
-`P01` is a complete reference implementation. The remaining modules are intentionally scaffolded so each can be implemented in a bounded, reviewable batch.
+Only after the checks actually pass and the learner gives a short teach-back, record local progress:
+
+```bash
+./bin/learn complete P02 --checks-passed --teach-back "Force mechanism; observable consequence."
+```
+
+The CLI refuses to write completion state when either confirmation is missing.
+
+`P01` is the reference implementation. The manifest is the source of truth for the current
+contiguous implemented frontier; later modules remain explicit scaffolds until their bounded batch
+is implemented and verified.
 
 ## Module layout
 

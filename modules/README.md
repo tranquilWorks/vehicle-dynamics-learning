@@ -7,7 +7,7 @@ reviewable implementation batch. `implemented` means the complete learner slice 
 | Batch | Phase | Module | Guiding question | Status |
 | --- | --- | --- | --- | --- |
 | P01 | 1: Motion and force | [Turn Steering and Speed into a Vehicle Path](../modules/01-turn-steering-and-speed-into-a-vehicle-path/README.md) | How do steering, speed, and tire grip determine the path a car can actually follow? | implemented |
-| P02 | 1: Motion and force | [Relate Acceleration to Tire Force](../modules/02-relate-acceleration-to-tire-force/README.md) | What inputs, observable effects, and failure modes matter when you relate Acceleration to Tire Force? | scaffolded |
+| P02 | 1: Motion and force | [Relate Acceleration to Tire Force](../modules/02-relate-acceleration-to-tire-force/README.md) | What inputs, observable effects, and failure modes matter when you relate Acceleration to Tire Force? | implemented |
 | P03 | 1: Motion and force | [See Longitudinal Weight Transfer](../modules/03-see-longitudinal-weight-transfer/README.md) | What inputs, observable effects, and failure modes matter when you see Longitudinal Weight Transfer? | scaffolded |
 | P04 | 1: Motion and force | [Use the Friction Circle](../modules/04-use-the-friction-circle/README.md) | What inputs, observable effects, and failure modes matter when you use the Friction Circle? | scaffolded |
 | P05 | 2: Tires and handling | [Build Slip-Ratio Intuition](../modules/05-build-slip-ratio-intuition/README.md) | What inputs, observable effects, and failure modes matter when you build Slip-Ratio Intuition? | scaffolded |

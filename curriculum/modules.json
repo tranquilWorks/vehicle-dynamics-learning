@@ -45,12 +45,12 @@
       "phase_title": "Motion and force",
       "slug": "relate-acceleration-to-tire-force",
       "folder": "modules/02-relate-acceleration-to-tire-force",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P02",
       "prerequisites": [
         "P01"
       ],
-      "evidence_level": "none"
+      "evidence_level": "static"
     },
     {
       "number": 3,
