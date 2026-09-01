@@ -58,6 +58,17 @@ class CurriculumTests(unittest.TestCase):
             ["read", "visualize-baseline", "move-one-lever", "visualize-delta", "read-and-explain"],
         )
 
+    def test_learner_catalog_rows_derive_from_the_manifest(self):
+        catalog = (ROOT / "modules/README.md").read_text(encoding="utf-8")
+        for module in self.data["modules"]:
+            expected_row = (
+                f"| {module['id']} | {module['phase']}: {module['phase_title']} | "
+                f"[{module['title']}](../{module['folder']}/README.md) | "
+                f"{module['guiding_question']} | {module['status']} |"
+            )
+            with self.subTest(module=module["id"]):
+                self.assertIn(expected_row, catalog)
+
 
 if __name__ == "__main__":
     unittest.main()
