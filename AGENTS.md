@@ -36,7 +36,7 @@ This repository is the **Vehicle Dynamics and Motorsport Engineering** interacti
 ## Governed agentic delivery
 
 - Product: `vehicle-dynamics-learning`; delivery profile: `product-data`.
-- Control revision: `35a09aca04b4f64cc97249ddd3e81e6f46faba6b`; harness version: `2`.
+- Control revision: `b2d464da48358794232ba229716bbfee12fa383d`; harness version: `2`.
 - Read `contracts/profile-requirements.yaml` and the approved
   `contracts/active-batch.yaml` before implementation.
 - Stay inside active-batch allowed paths and preserve every forbidden path.
