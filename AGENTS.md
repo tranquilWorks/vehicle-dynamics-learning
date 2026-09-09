@@ -35,6 +35,7 @@ This repository is the **Vehicle Dynamics and Motorsport Engineering** interacti
 <!-- BEGIN PORTFOLIO-CONTROL MANAGED -->
 ## Governed agentic delivery
 
+- Read `.agents/skills/engineering-execution/SKILL.md` for nontrivial work: complete the requested outcome, verify its entry point, and preserve context.
 - Product: `vehicle-dynamics-learning`; delivery profile: `product-data`.
 - Control revision: `b2d464da48358794232ba229716bbfee12fa383d`; harness version: `2`.
 - Read `contracts/profile-requirements.yaml` and the approved
